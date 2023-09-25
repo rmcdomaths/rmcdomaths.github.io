@@ -11,49 +11,39 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* PhD in Mathematics, University of Oxford, United Kingdom
+* MSc in Mathematical Modelling and Scientific Computing, University of Oxford
+* MMath in Mathematics, University of Warwick
+
+Awards
+======
+* Kennedy Scholar, Kennedy Memorial Trust
+* EPSRC Studentship, University of Oxford Mathematics Institute
+* Crew Graduate Scholarship, Lincoln College
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Mathematical Consultant, Smith Institute, Oxford, United Kingdom
+* Research Assistant, Sciences Po University, Paris, France
+* English Language Assistant, British Council, Canton of Jura, Switzerland
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+* Programming: Python, MATLAB, R, Java, C++
+* Languages: English, French
   
 Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Academic Outreach
 ======
-* Currently signed in to 43 different slack teams
+  <ul>{% for post in site.teaching %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Leadership
+======
+* Graduate Student President at Lincoln College, Oxford
