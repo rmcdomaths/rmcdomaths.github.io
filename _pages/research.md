@@ -17,5 +17,8 @@ Publications
   {% include archive-single.html %}
 {% endfor %}
 
-Other projects
+Projects
 ======
+{% for post in site.projects reversed %}
+  {% include archive-single.html %}
+{% endfor %}
