@@ -33,6 +33,7 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
+    <img src=/images/profile.jpeg>
       {% include image-only.html %}
   </div>
 </div>
