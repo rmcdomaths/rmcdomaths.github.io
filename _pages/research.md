@@ -14,7 +14,7 @@ author_profile: true
 Publications
 ======
 {% for post in site.publications reversed %}
-  {% include archive-single-image.html %}
+  {% include archive-single.html %}
 {% endfor %}
 
 Projects
