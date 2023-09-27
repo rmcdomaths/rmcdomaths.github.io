@@ -4,6 +4,7 @@ collection: publications
 permalink: 'https://royalsocietypublishing.org/doi/full/10.1098/rsif.2023.0280'
 excerpt: 'This paper introduces a stochastic spatio-temporal model of coral reef growth. We use zigzag persistence to study different ecological scenarios and demonstrate the applicability of our methods to real coral data. <br />
 [[arxiv]](https://arxiv.org/abs/2209.08974) [[bibtex]]() [[code]](https://github.com/rmcdomaths/zigzagcoralmodel)'
+teaser: profile.jpeg
 date: 2023-08-23
 venue: 'Journal of the Royal Society Interface'
 paperurl: 'https://royalsocietypublishing.org/doi/full/10.1098/rsif.2023.0280'

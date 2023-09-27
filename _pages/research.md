@@ -14,13 +14,13 @@ author_profile: true
 Publications
 ======
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% include archive-single-image.html %}
 {% endfor %}
 
 Projects
 ======
 {% for post in site.projects reversed %}
-  {% include archive-single-projects.html %}
+  {% include archive-single.html %}
 {% endfor %}
 
 none
