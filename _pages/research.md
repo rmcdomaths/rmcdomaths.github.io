@@ -33,7 +33,7 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-    <h2>picture will go here</h2>
+    <h2><img style=height:post.imgsize; src=post.img></h2>
   </div>
 </div>
 {% endfor %}

@@ -6,7 +6,8 @@ excerpt: 'This paper introduces a stochastic spatio-temporal model of coral reef
 <br />
 [[arxiv]](https://arxiv.org/abs/2209.08974) [[bibtex]]() [[code]](https://github.com/rmcdomaths/zigzagcoralmodel)'
 date: 2023-08-23
-image: 'images/500x300.png'
+img: "/images/profile.jpeg"
+imgsize: 100px
 venue: 'Journal of the Royal Society Interface'
 paperurl: 
 citation: 
