@@ -14,14 +14,12 @@ author_profile: true
 Publications
 ======
 {% for post in site.publications reversed %}
-  Hello {{"first one"}}
   {% include archive-single.html %}
 {% endfor %}
 
 Projects
 ======
 {% for post in site.projects reversed %}
-  Hello {{"it's robbo"}}
   {% include archive-single.html %}
 {% endfor %}
 
