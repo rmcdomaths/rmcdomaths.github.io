@@ -33,16 +33,13 @@ author_profile: true
 </head>
 <body>
 
-<h1>Two Equal Columns</h1>
-
 {% for post in site.publications reversed %}
 <div class="row">
   <div class="columnL">
       {% include archive-single.html %}
   </div>
-  <div class="columnR" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+  <div class="columnR">
+    <h2>picture will go here
   </div>
 </div>
 {% endfor %}
