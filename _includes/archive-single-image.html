@@ -7,99 +7,50 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.6">
   <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; -webkit-text-stroke: #000000; min-height: 19.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px Times; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 24.0px Times; text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;{{ title }}&lt;/title&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* CSS styles for horizontal layout */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.horizontal-layout {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center; /* Align vertically center */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.horizontal-layout img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 50%; /* Adjust the width of the image as needed */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 20px; /* Add margin to separate image and text */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">{% include base_path %}</p>
-<p class="p1">{% if post.header.teaser %}</p>
-<p class="p1">{% capture teaser %}{{ post.header.teaser }}{% endcapture %}</p>
-<p class="p1">{% else %}</p>
-<p class="p1">{% assign teaser = site.teaser %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if post.id %}</p>
-<p class="p1">{% assign title = post.title | markdownify | remove: "</p>
-<p class="p1">" | remove: "</p>
-<p class="p2"><br></p>
-<p class="p1">" %}</p>
-<p class="p1">{% else %}</p>
-<p class="p1">{% assign title = post.title %}</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if include.type == "grid" and teaser %}</p>
-<p class="p2"><br></p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if post.link %}</p>
-<p class="p1">{{ title }} Permalink</p>
-<p class="p1">{% else %}</p>
-<p class="p1">{{ title }}</p>
-<p class="p1">{% endif %}</p>
-<p class="p2"><br></p>
-<p class="p1">{% if post.read_time %}</p>
-<p class="p1">{% include read-time.html %}</p>
-<p class="p2"><br></p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if post.collection == 'teaching' %}</p>
-<p class="p1">{{ post.type }}, {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% elsif post.collection == 'publications' %}</p>
-<p class="p1">Published in {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% elsif post.date %}</p>
-<p class="p1">{{ site.data.ui-text[site.locale].date_label | default: "Published:" }} {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if post.excerpt and site.read_more != 'enabled' %}</p>
-<p class="p1">{{ post.excerpt | markdownify }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% elsif post.excerpt and site.read_more == 'enabled' %}</p>
-<p class="p1">{{ post.excerpt | markdownify | remove: '</p>
-<p class="p2"><br></p>
-<p class="p1">' | remove: '</p>
-<p class="p2"><br></p>
-<p class="p1">' }} Read more</p>
-<p class="p1">{% endif %}</p>
-<p class="p1">{% if post.citation and post.paperurl %}</p>
-<p class="p1">Recommended citation: {{ post.citation }} {{ post.paperurl }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% elsif post.citation %}</p>
-<p class="p1">Recommended citation: {{ post.citation }}</p>
-<p class="p2"><br></p>
-<p class="p1">{% elsif post.paperurl %}</p>
-<p class="p1">Download here</p>
-<p class="p2"><br></p>
-<p class="p1">{% endif %}</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;!-- Display the image and content horizontally --&gt;</p>
-<p class="p1">&lt;div class="horizontal-layout"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if post.header.image %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="{{ post.header.image }}" alt="Image Description"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{{ post.content | markdownify }}</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<p class="p1"><span class="s1">{% include base_path %} {% if post.header.teaser %} {% capture teaser %}{{ post.header.teaser }}{% endcapture %} {% else %} {% assign teaser = site.teaser %} {% endif %} {% if post.id %} {% assign title = post.title | markdownify | remove: "</span></p>
+<p class="p1"><span class="s1">" | remove: "</span></p>
+<p class="p1"><span class="s1">" %} {% else %} {% assign title = post.title %} {% endif %}</span></p>
+<p class="p1"><span class="s1">{% if include.type == "grid" and teaser %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p3"><span class="s1"><b>{% if post.link %} </b><a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20post.link%20%7D%7D"><span class="s2"><b>{{ title }}</b></span></a><b> </b><a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20base_path%20%7D%7D%7B%7B%20post.url%20%7D%7D"><span class="s2"><b>Permalink</b></span></a><b> {% else %} </b><a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20base_path%20%7D%7D%7B%7B%20post.url%20%7D%7D"><span class="s2"><b>{{ title }}</b></span></a><b> {% endif %}</b></span></p>
+<p class="p1"><span class="s1">{% if post.read_time %}</span></p>
+<p class="p1"><span class="s1">{% include read-time.html %}</span></p>
+<p class="p1"><span class="s1">{% endif %} {% if post.collection == 'teaching' %}</span></p>
+<p class="p1"><span class="s1">{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</span></p>
+<p class="p1"><span class="s1">{% elsif post.collection == 'publications' %}</span></p>
+<p class="p1"><span class="s1">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</span></p>
+<p class="p1"><span class="s1">{% elsif post.date %}</span></p>
+<p class="p4"><span class="s1"><b>{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</b> {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</span></p>
+<p class="p1"><span class="s1">{% endif %} {% if post.excerpt and site.read_more != 'enabled' %}</span></p>
+<p class="p1"><span class="s1">{{ post.excerpt | markdownify }}</span></p>
+<p class="p1"><span class="s1">{% elsif post.excerpt and site.read_more == 'enabled' %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{{ post.excerpt | markdownify | remove: '</span></p>
+<p class="p1"><span class="s1">' | remove: '</span></p>
+<p class="p5"><span class="s3">' }}<a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20base_path%20%7D%7D%7B%7B%20post.url%20%7D%7D"><span class="s4"><b> Read more</b></span></a></span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% endif %} {% if post.citation and post.paperurl %}</span></p>
+<p class="p1"><span class="s1">Recommended citation: {{ post.citation }} <a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20post.paperurl%20%7D%7D"><span class="s5">{{ post.paperurl }}</span></a></span></p>
+<p class="p1"><span class="s1">{% elsif post.citation %}</span></p>
+<p class="p1"><span class="s1">Recommended citation: {{ post.citation }}</span></p>
+<p class="p1"><span class="s1">{% elsif post.paperurl %}</span></p>
+<p class="p1"><span class="s1">Download <a href="file:///Users/robertmcdonald/Documents/develop/rmcdomaths.github.io/_includes/%7B%7B%20post.paperurl%20%7D%7D"><span class="s5">here</span></a></span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">![thispic](/images/profile.jpeg)</span></p>
 </body>
 </html>
