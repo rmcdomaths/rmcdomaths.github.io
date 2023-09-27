@@ -35,17 +35,17 @@ author_profile: true
 
 <h1>Two Equal Columns</h1>
 
+{% for post in site.publications reversed %}
 <div class="row">
-  <div class="columnL" style="background-color:#aaa;">
-    {% for post in site.publications reversed %}
+  <div class="columnL">
       {% include archive-single.html %}
-    {% endfor %}
   </div>
   <div class="columnR" style="background-color:#bbb;">
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
 </div>
+{% endfor %}
 
 </body>
 </html>
