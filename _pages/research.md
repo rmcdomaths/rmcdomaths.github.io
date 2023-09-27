@@ -4,7 +4,6 @@ title:
 permalink: /research/
 author_profile: true
 ---
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +11,6 @@ author_profile: true
 * {
   box-sizing: border-box;
 }
-
-/* Create two equal columns that floats next to each other */
 .columnL {
   float: left;
   width: 67%;
@@ -22,8 +19,6 @@ author_profile: true
   float: right;
   width: 33%;
 }
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -32,18 +27,16 @@ author_profile: true
 </style>
 </head>
 <body>
-
 {% for post in site.publications reversed %}
 <div class="row">
   <div class="columnL">
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-    <h2>picture will go here
+    <h2>picture will go here</h2>
   </div>
 </div>
 {% endfor %}
-
 </body>
 </html>
 
