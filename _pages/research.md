@@ -14,11 +14,13 @@ author_profile: true
 }
 
 /* Create two equal columns that floats next to each other */
-.column {
+.columnL {
   float: left;
-  width: 75%;
-  padding: 10px;
-  
+  width: 67%;
+}
+.columnR {
+  float: right;
+  width: 33%;
 }
 
 /* Clear floats after the columns */
@@ -31,14 +33,15 @@ author_profile: true
 </head>
 <body>
 
-<h2>Two Equal Columns</h2>
+<h1>Two Equal Columns</h1>
 
 <div class="row">
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+  <div class="columnL" style="background-color:#aaa;">
+    {% for post in site.publications reversed %}
+      {% include archive-single.html %}
+    {% endfor %}
   </div>
-  <div class="column" style="background-color:#bbb;">
+  <div class="columnR" style="background-color:#bbb;">
     <h2>Column 2</h2>
     <p>Some text..</p>
   </div>
