@@ -1,3 +1,10 @@
+---
+layout: archive
+title: 
+permalink: /research/
+author_profile: true
+---
+
 <!DOCTYPE html>
 <html>
 <title>HTML Tutorial</title>
