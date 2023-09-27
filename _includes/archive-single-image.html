@@ -12,82 +12,94 @@
   </style>
 </head>
 <body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.horizontal-layout {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>align-items: center; /* Align vertically center */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>.horizontal-layout img {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width: 50%; /* Adjust the width of the image as needed */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-right: 20px; /* Add margin to separate image and text */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;{{ title }}&lt;/title&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CSS styles for horizontal layout */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.horizontal-layout {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center; /* Align vertically center */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.horizontal-layout img {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 50%; /* Adjust the width of the image as needed */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 20px; /* Add margin to separate image and text */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
 <p class="p2"><br></p>
 <p class="p1">{% include base_path %}</p>
 <p class="p1">{% if post.header.teaser %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% capture teaser %}{{ post.header.teaser }}{% endcapture %}</p>
+<p class="p1">{% capture teaser %}{{ post.header.teaser }}{% endcapture %}</p>
 <p class="p1">{% else %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% assign teaser = site.teaser %}</p>
+<p class="p1">{% assign teaser = site.teaser %}</p>
 <p class="p1">{% endif %}</p>
 <p class="p1">{% if post.id %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% assign title = post.title | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" %}</p>
+<p class="p1">{% assign title = post.title | markdownify | remove: "</p>
+<p class="p1">" | remove: "</p>
+<p class="p2"><br></p>
+<p class="p1">" %}</p>
 <p class="p1">{% else %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% assign title = post.title %}</p>
+<p class="p1">{% assign title = post.title %}</p>
+<p class="p1">{% endif %}</p>
+<p class="p1">{% if include.type == "grid" and teaser %}</p>
+<p class="p2"><br></p>
+<p class="p1">{% endif %}</p>
+<p class="p1">{% if post.link %}</p>
+<p class="p1">{{ title }} Permalink</p>
+<p class="p1">{% else %}</p>
+<p class="p1">{{ title }}</p>
 <p class="p1">{% endif %}</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;div class="project-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if teaser %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="project-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="{{ teaser }}" alt="{{ title }}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
+<p class="p1">{% if post.read_time %}</p>
+<p class="p1">{% include read-time.html %}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="project-details"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{% if post.link %}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="{{ post.url }}"&gt;{{ title }}&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{% else %}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>{{ title }}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{% endif %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</p>
+<p class="p1">{% endif %}</p>
+<p class="p1">{% if post.collection == 'teaching' %}</p>
+<p class="p1">{{ post.type }}, {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% if post.read_time %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{% include read-time.html %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
+<p class="p1">{% elsif post.collection == 'publications' %}</p>
+<p class="p1">Published in {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% if post.collection == 'teaching' %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{{ post.type }}, {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% elsif post.collection == 'publications' %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Published in {{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% elsif post.date %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{{ site.data.ui-text[site.locale].date_label | default: "Published:" }} {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
+<p class="p1">{% elsif post.date %}</p>
+<p class="p1">{{ site.data.ui-text[site.locale].date_label | default: "Published:" }} {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% if post.excerpt and site.read_more != 'enabled' %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{{ post.excerpt | markdownify }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% elsif post.excerpt and site.read_more == 'enabled' %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>{{ post.excerpt | markdownify | remove: '&lt;p&gt;' | remove: '&lt;/p&gt;' }} Read more</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
+<p class="p1">{% endif %}</p>
+<p class="p1">{% if post.excerpt and site.read_more != 'enabled' %}</p>
+<p class="p1">{{ post.excerpt | markdownify }}</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% if post.citation and post.paperurl %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Recommended citation: {{ post.citation }} {{ post.paperurl }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% elsif post.citation %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Recommended citation: {{ post.citation }}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% elsif post.paperurl %}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Download here</p>
-<p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
+<p class="p1">{% elsif post.excerpt and site.read_more == 'enabled' %}</p>
+<p class="p1">{{ post.excerpt | markdownify | remove: '</p>
 <p class="p2"><br></p>
+<p class="p1">' | remove: '</p>
+<p class="p2"><br></p>
+<p class="p1">' }} Read more</p>
+<p class="p1">{% endif %}</p>
+<p class="p1">{% if post.citation and post.paperurl %}</p>
+<p class="p1">Recommended citation: {{ post.citation }} {{ post.paperurl }}</p>
+<p class="p2"><br></p>
+<p class="p1">{% elsif post.citation %}</p>
+<p class="p1">Recommended citation: {{ post.citation }}</p>
+<p class="p2"><br></p>
+<p class="p1">{% elsif post.paperurl %}</p>
+<p class="p1">Download here</p>
+<p class="p2"><br></p>
+<p class="p1">{% endif %}</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Display the image and content horizontally --&gt;</p>
 <p class="p1">&lt;div class="horizontal-layout"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{% if post.image %}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="{{ post.image }}" alt="Image Description"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% if post.header.image %}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="{{ post.header.image }}" alt="Image Description"&gt;</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{{ post.content | markdownify }}</p>
 <p class="p1">&lt;/div&gt;</p>
 <p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
 </body>
 </html>
