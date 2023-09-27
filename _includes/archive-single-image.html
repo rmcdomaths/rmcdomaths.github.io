@@ -12,6 +12,18 @@
   </style>
 </head>
 <body>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.horizontal-layout {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center; /* Align vertically center */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.horizontal-layout img {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 50%; /* Adjust the width of the image as needed */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-right: 20px; /* Add margin to separate image and text */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
 <p class="p1">{% include base_path %}</p>
 <p class="p1">{% if post.header.teaser %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>{% capture teaser %}{{ post.header.teaser }}{% endcapture %}</p>
@@ -67,5 +79,13 @@
 <p class="p1"><span class="Apple-converted-space">    </span>{% endif %}</p>
 <p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
 <p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="horizontal-layout"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% if post.image %}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="{{ post.image }}" alt="Image Description"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{{ post.content | markdownify }}</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
 </body>
 </html>
