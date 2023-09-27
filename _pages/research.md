@@ -20,6 +20,7 @@ Publications
 Projects
 ======
 {% for post in site.projects reversed %}
+  Hello {{"it's robbo"}}
   {% include archive-single.html %}
 {% endfor %}
 
