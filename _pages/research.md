@@ -33,8 +33,7 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-    post
-    {{<img src=>}}
+      {% include image-only.html %}
   </div>
 </div>
 {% endfor %}
