@@ -12,6 +12,10 @@ author_profile: true
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
 
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
 </body>
 </html>
 
