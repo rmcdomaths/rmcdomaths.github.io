@@ -16,9 +16,9 @@ author_profile: true
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 75%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  
 }
 
 /* Clear floats after the columns */
@@ -34,7 +34,7 @@ author_profile: true
 <h2>Two Equal Columns</h2>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" style="background-color:#bbb;">
     <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
