@@ -1,4 +1,16 @@
----
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!-- ---
 layout: archive
 title: 
 permalink: /research/
@@ -21,4 +33,4 @@ Projects
 ======
 {% for post in site.projects reversed %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->
