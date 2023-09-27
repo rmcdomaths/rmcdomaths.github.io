@@ -34,7 +34,7 @@ author_profile: true
   </div>
   <div class="columnR">
     post
-    <img src=>
+    {{<img src=>}}
   </div>
 </div>
 {% endfor %}
