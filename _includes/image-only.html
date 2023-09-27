@@ -8,14 +8,20 @@
   <meta name="CocoaVersion" content="2113.6">
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; -webkit-text-stroke: #000000; min-height: 19.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times; color: #000000; -webkit-text-stroke: #000000}
     span.s1 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">{% include base_path %}</span></p>
-<p class="p2"><span class="s1">{% if post.img %}<span class="Apple-converted-space"> </span></span></p>
-<p class="p2"><span class="s1">{{ post.img }}</span></p>
-<p class="p2"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">{% include base_path %} {% if post.header.teaser %} {% capture teaser %}{{ post.header.teaser }}{% endcapture %} {% else %} {% assign teaser = site.teaser %} {% endif %} {% if post.id %} {% assign title = post.title | markdownify | remove: "</span></p>
+<p class="p1"><span class="s1">" | remove: "</span></p>
+<p class="p1"><span class="s1">" %} {% else %} {% assign title = post.title %} {% endif %}</span></p>
+<p class="p1"><span class="s1">{% if include.type == "grid" and teaser %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p3"><span class="s1">{% if post.img %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1">{{ post.img }}</span></p>
+<p class="p3"><span class="s1">{% endif %}</span></p>
 </body>
 </html>
