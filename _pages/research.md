@@ -39,7 +39,19 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-{% endfor %} -->
+{% endfor %}
+
+{% for post in site.publications reversed %}
+<div class="row">
+  <div class="columnL">
+      {% include archive-single.html %}
+  </div>
+  <div class="columnR">
+      <img style="height:300px" src="/images/interface.png">
+  </div>
+</div>
+{% endfor %}
+
 
 <!-- {% for post in site.projects reversed %}
 <div class="row">
