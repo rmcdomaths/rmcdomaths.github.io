@@ -19,7 +19,7 @@ Awards
 ======
 * Kennedy Scholar, Kennedy Memorial Trust
 * EPSRC Studentship, University of Oxford Mathematics Institute
-* Crew Graduate Scholarship, Lincoln College
+* Crewe Graduate Scholarship, Lincoln College
 
 Work experience
 ======
