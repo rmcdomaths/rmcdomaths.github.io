@@ -84,7 +84,7 @@ author_profile: true
   </div>
   <div class="columnR">
         <br /> <br />    
-      <img style="width:auto;height:200px" src="/images/network_fig.png">
+      <img style="width:auto;height:150px" src="/images/network_fig.png">
   </div>
 </div>
 
