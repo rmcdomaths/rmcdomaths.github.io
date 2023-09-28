@@ -66,8 +66,25 @@ author_profile: true
       <br /> <br /> 
   </div>
   <div class="columnR">
-        <br />    
+        <br /> <br />    
       <img style="width:auto;height:200px" src="/images/trains_fig.png">
+  </div>
+</div>
+
+<br />
+<br />
+
+<div class="row">
+  <div class="columnL">
+      <h2> Community detection in complex networks"</h2>
+      This project investigated methods of partitioning complex networks with multi-node relations.
+      <br /> <br />
+      Completed as part of the MSc in Mathematical Modelling and Scientific Computing.
+      <br /> <br /> 
+  </div>
+  <div class="columnR">
+        <br /> <br />    
+      <img style="width:auto;height:200px" src="/images/networks_fig.eps">
   </div>
 </div>
 
