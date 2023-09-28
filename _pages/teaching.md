@@ -1,11 +1,10 @@
 ---
 layout: archive
-title: Teaching and Outreach
+title: Teaching
 permalink: /teaching/
 author_profile: true
 ---
 
-# Teaching
 ## University of Oxford
 Teaching Assistant for the modules:
 * Further Mathematical Biology
@@ -23,10 +22,3 @@ Undergraduate Supervisor for the modules:
 * Linear Algebra
 * Geometry and Motion
 * Mathematical Foundations
-
-# Outreach
-## Further Mathematics Support Programme
-
-## Warwick in Africa
-
-## Warwick Laksh Programme
