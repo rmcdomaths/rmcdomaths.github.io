@@ -6219,3 +6219,14 @@ vendor/bundle/ruby/3.1.0/gems/ffi-1.16.1/ext/ffi_c/libffi/.ci/compile
 vendor/bundle/ruby/3.1.0/gems/ffi-1.16.1/ext/ffi_c/libffi/testsuite/libffi.bhaible/Makefile
 vendor/bundle/ruby/3.1.0/gems/ffi-1.16.1/ext/ffi_c/libffi/.ci/compile
 vendor/bundle/ruby/3.1.0/gems/ffi-1.16.1/ext/ffi_c/libffi/testsuite/libffi.bhaible/Makefile
+cut/archive-layout-with-content.md
+cut/category-archive.html
+cut/collection-archive.html
+cut/non-menu-page.md
+cut/page-archive.html
+cut/portfolio.html
+cut/tag-archive.html
+cut/talkmap.html
+cut/talks.html
+cut/terms.md
+cut/year-archive.html
