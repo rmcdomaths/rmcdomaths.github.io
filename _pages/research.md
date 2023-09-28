@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 ---
 layout: archive
 title: 
@@ -19,6 +18,8 @@ author_profile: true
 .columnR {
   float: right;
   width: 33%;
+  padding: 50;
+  vertical-align: bottom;
 }
 .row:after {
   content: "";
@@ -34,7 +35,8 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-      <img src="/images/profile.jpeg">
+      {% post.img %}
+      <img style="height:10px" src="/images/interface.png">
   </div>
 </div>
 {% endfor %}
