@@ -33,8 +33,7 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-    <img src=/images/profile.jpeg>
-      {% include image-only.html %}
+      <img src="/images/profile.jpeg">
   </div>
 </div>
 {% endfor %}
@@ -66,4 +65,4 @@ Projects
 ======
 {% for post in site.projects reversed %}
   {% include archive-single.html %}
-{% endfor %} --> -->
+{% endfor %} --> 
