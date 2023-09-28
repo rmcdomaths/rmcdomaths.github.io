@@ -35,7 +35,12 @@ author_profile: true
 
 <div class="row">
   <div class="columnL">
-      Name1
+      <h2> [Zigzag persistence for coral reef resilience using a stochastic spatial model](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2023.0280) </h2>
+      <br />
+      Published in: <em>Journal of the Royal Society Interface</em>, 2023
+      This paper introduces a stochastic spatio-temporal model of coral reef growth. We use zigzag persistence to study different ecological scenarios and demonstrate the applicability of our methods to real coral data. <br />
+      [[arxiv]](https://arxiv.org/abs/2209.08974) [[bibtex]]() [[code]](https://github.com/rmcdomaths/zigzagcoralmodel)
+      
   </div>
   <div class="columnR">
       <img style="height:300px" src="/images/interface.png">
