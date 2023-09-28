@@ -66,7 +66,7 @@ author_profile: true
       <br /> <br /> 
   </div>
   <div class="columnR">
-        <br /> <br />     
+        <br />    
       <img style="width:auto;height:200px" src="/images/trains_fig.png">
   </div>
 </div>
