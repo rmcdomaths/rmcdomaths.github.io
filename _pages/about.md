@@ -1,8 +1,8 @@
 ---
-permalink: /
-title: 
+permalink:
+title: Home
 excerpt:
-author_profile: true
+author_profile:
 redirect_from: 
   - /about/
   - /about.html

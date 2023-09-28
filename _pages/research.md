@@ -4,7 +4,10 @@ title:
 permalink: /research/
 author_profile: true
 ---
-<html>
+
+{% include archive-single.html %}
+
+<!-- <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -38,9 +41,9 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-{% endfor %}
+{% endfor %} -->
 
-{% for post in site.projects reversed %}
+<!-- {% for post in site.projects reversed %}
 <div class="row">
   <div class="columnL">
       {% include archive-single.html %}
@@ -49,10 +52,7 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-<br />
-<br />
-<div style="background-color:white;color:white;padding:20px">
-{% endfor %}
+{% endfor %} -->
 </body>
 </html>
 
