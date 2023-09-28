@@ -36,9 +36,12 @@ author_profile: true
 <div class="row">
   <div class="columnL">
       <h2> <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2023.0280">Zigzag persistence for coral reef resilience using a stochastic spatial model</a> </h2>
-      <br /> 
       Published in: <em>Journal of the Royal Society Interface</em>, 2023
       <br /> <br />
+      This paper introduces a stochastic spatio-temporal model of coral reef growth. We use zigzag persistence to study different ecological scenarios and demonstrate the applicability of our methods to real coral data.
+      <br /> <br />
+      Citation: McDonald, R.A., Neuhausler, R., Robinson, M., Larsen, L.G., Harrington, H.A. and Bruna, M., 2023. Zigzag persistence for coral reef resilience using a stochastic spatial model. Journal of the Royal Society Interface, 20(205), p.20230280.
+      <br /> <br />      
       <a href="https://arxiv.org/abs/2209.08974"> [arxiv] </a>
       <a href="https://github.com/rmcdomaths/zigzagcoralmodel"> [code] </a>   
   </div>
