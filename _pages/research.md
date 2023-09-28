@@ -99,7 +99,7 @@ author_profile: true
       <br /> <br /> 
   </div>
   <div class="columnR">
-        <br /> <br />    
+        <br /> <br /> <br />     
         <img style="width:auto;height:150" src="/images/turing_fig.png">
 
 
