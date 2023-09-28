@@ -5,9 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-{% include archive-single.html %}
-
-<!-- <html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -52,7 +50,7 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-{% endfor %} -->
+{% endfor %}
 </body>
 </html>
 
