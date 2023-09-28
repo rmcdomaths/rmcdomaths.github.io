@@ -46,7 +46,9 @@ author_profile: true
       <a href="https://github.com/rmcdomaths/zigzagcoralmodel"> [code] </a>   
   </div>
   <div class="columnR">
-      <img style="height:400px" src="/images/interface.png">
+        <br /> <br /> <br /> <br />      
+     
+      <img style="height:350px" src="/images/interface.png">
   </div>
 </div>
 
