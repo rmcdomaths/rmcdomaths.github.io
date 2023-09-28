@@ -49,6 +49,8 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
+<br />
+<br />
 <div style="background-color:white;color:white;padding:20px">
 {% endfor %}
 </body>
