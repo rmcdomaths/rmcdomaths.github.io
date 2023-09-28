@@ -41,7 +41,6 @@ author_profile: true
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-{% endfor %}
 
 <br />
 <br />
