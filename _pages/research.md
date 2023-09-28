@@ -35,7 +35,7 @@ author_profile: true
       {% include archive-single.html %}
   </div>
   <div class="columnR">
-      <img style="height:500px" src="/images/interface.png">
+      <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
 {% endfor %}
