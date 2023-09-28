@@ -59,7 +59,7 @@ author_profile: true
 
 <div class="row">
   <div class="columnL">
-      <h2> Max-Plus Algebra to Model and Optimise Urban Rail Network</h2>
+      <h2> Max-Plus Algebra to Optimise Urban Rail Networks</h2>
       <br /> <br />
       'This project compared transport networks in Rotterdam, London and New York using max-plus (tropical) algebra. 
       <br /> <br />
