@@ -50,18 +50,22 @@ author_profile: true
 
 <h1> Projects </h1>
 
-
-
-{% for post in site.projects reversed %}
 <div class="row">
   <div class="columnL">
-      {% include archive-single.html %}
+      Name
   </div>
   <div class="columnR">
       <img style="height:300px" src="/images/interface.png">
   </div>
 </div>
-{% endfor %}
+<br />
+  <div class="columnL">
+      Name
+  </div>
+  <div class="columnR">
+      <img style="height:300px" src="/images/interface.png">
+  </div>
+</div>
 
 
 <!-- {% for post in site.projects reversed %}
