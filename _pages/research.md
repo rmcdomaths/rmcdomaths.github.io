@@ -35,6 +35,8 @@ author_profile: true
 
  Computational models aim to explain experimental observations (i.e. data) and make predictions about the future behaviour of a system. In ecological communities, multi-scale networks and complex physiological processes, data may often be described as "spatial". Cells interact with cells that surround them, humans build connections according to how resources are geographically distributed, and the behaviour of a complex system may be heavily affected by the spatial organisation of its agents. I apply topology - a branch of pure mathematics ideally suited to studying the shape of data - to enhance mathematical models of such phenomena.
 
+      <br /> <br />      <br /> <br />
+
 
 <h1> Publications </h1>
 
