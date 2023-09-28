@@ -33,10 +33,9 @@ author_profile: true
 
 <h1> Publications </h1>
 
-{% for post in site.publications reversed %}
 <div class="row">
   <div class="columnL">
-      {% include archive-single.html %}
+      Name
   </div>
   <div class="columnR">
       <img style="height:300px" src="/images/interface.png">
@@ -59,6 +58,7 @@ author_profile: true
   </div>
 </div>
 <br />
+
   <div class="columnL">
       Name
   </div>
