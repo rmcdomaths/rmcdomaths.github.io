@@ -5,9 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
-Publications
-======
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +30,9 @@ Publications
 </style>
 </head>
 <body>
+
+<h1> Publications </h1>
+
 {% for post in site.publications reversed %}
 <div class="row">
   <div class="columnL">
