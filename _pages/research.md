@@ -100,12 +100,7 @@ author_profile: true
   </div>
   <div class="columnR">
         <br /> <br />    
-        <div class="inline-block">
-        <img style="width:auto;height:100px" src="/images/turing_fig1.png">
-        </div>
-        <div class="inline-block">
-        <img style="width:auto;height:100px" src="/images/turing_fig2.png">
-        </div>
+        <img style="width:auto;height:150" src="/images/turing_fig.png">
 
 
   </div>
