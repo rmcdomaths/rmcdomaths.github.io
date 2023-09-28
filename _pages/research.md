@@ -4,6 +4,7 @@ title:
 permalink: /research/
 author_profile: true
 ---
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
