@@ -48,8 +48,11 @@ author_profile: true
 <br />
 <br />
 
+<h1> Projects </h1>
 
-{% for post in site.publications reversed %}
+
+
+{% for post in site.projects reversed %}
 <div class="row">
   <div class="columnL">
       {% include archive-single.html %}
