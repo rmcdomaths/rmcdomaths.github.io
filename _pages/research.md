@@ -72,7 +72,6 @@ author_profile: true
 </div>
 
 <br />
-<br />
 
 <div class="row">
   <div class="columnL">
@@ -91,6 +90,24 @@ author_profile: true
 <br />
 <br />
 
+<div class="row">
+  <div class="columnL">
+      <h2> Pattern formation in Reaction-Diffusion systems</h2>
+      This project used persistent homology to quantify the different spatial patterns that can arise in reaction-diffusion equations.
+      <br /> <br />
+      Completed as part of the MSc in Mathematical Modelling and Scientific Computing.
+      <br /> <br /> 
+  </div>
+  <div class="columnR">
+        <br /> <br />    
+      <img style="width:auto;height:150px" src="/images/turing_fig1.png">
+      <img style="width:auto;height:150px" src="/images/turing_fig2.png">
+
+  </div>
+</div>
+
+<br />
+<br />
 
 <!-- {% for post in site.projects reversed %}
 <div class="row">
