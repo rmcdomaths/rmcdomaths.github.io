@@ -35,4 +35,4 @@ Skills
 Leadership
 ======
 * Graduate Student President at Lincoln College, Oxford
-* Men's captain at Harvard Graduate Rowing Club
+* Men's captain at Harvard Graduate Rowing Club 
