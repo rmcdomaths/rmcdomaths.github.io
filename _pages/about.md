@@ -10,7 +10,7 @@ redirect_from:
 
 About me
 ---
-I am a PhD candidate in Applied Mathematics at the University of Oxford. From September 2023, I am a Visiting Fellow at the Kenneth C. Griffin Graduate School of Arts and Sciences at Harvard University, supported by the Kennedy Memorial Scholarship.
+I am a PhD candidate in Applied Mathematics at the University of Oxford. From September 2023 to May 2024, I was a Visiting Fellow at the Kenneth C. Griffin Graduate School of Arts and Sciences at Harvard University, supported by the Kennedy Memorial Scholarship.
 
 Background
 ---
