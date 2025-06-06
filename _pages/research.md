@@ -42,6 +42,24 @@ author_profile: true
 
 <div class="row">
   <div class="columnL">
+      <h2> <a href="https://arxiv.org/abs/2504.15442">Topological model selection: a case-study in tumour-induced angiogenesis</a> </h2>
+      Published in: <em>arxiv pre-print</em>, 2025
+      <br /> <br />
+      This paper studies the problem of parameter inference and model selection and develops a novel pipeline applied to tumour-induced angiogenesis, the process through which cancerous tumours gain a blood supply and grow.
+      <br /> <br />
+      Citation: Robert A McDonald, Helen M Byrne, Heather A Harrington, Thomas Thorne, & Bernadette J Stolz. (2025). Topological model selection: a case-study in tumour-induced angiogenesis.
+      <br /> <br />      
+      <a href="https://arxiv.org/abs/2504.15442"> [arxiv] </a>
+      <a href="https://github.com/rmcdomaths/tms"> [code] </a>   
+  </div>
+  <!-- <div class="columnR">
+        <br /> <br />     
+      <img style="height:350px" src="/images/interface.png">
+  </div> -->
+</div>
+
+<div class="row">
+  <div class="columnL">
       <h2> <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2023.0280">Zigzag persistence for coral reef resilience using a stochastic spatial model</a> </h2>
       Published in: <em>Journal of the Royal Society Interface</em>, 2023
       <br /> <br />
