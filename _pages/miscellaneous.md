@@ -5,7 +5,7 @@ permalink: /misc/
 author_profile: true
 ---
 ### Rowing
-I am a rower and/or coxswain at Lincoln College Boat Club, and Putney Town Rowing Club. I have previously been a member of the Rowing Club at Harvard Griffin Graduate School of Arts and Sciences, and TBC Racing. Alongisde competing, I provide live commentary at amateur rowing races. I am also a [UK Racing Content] (https://jrn.news/author/studentrowingwriter2526110/) writer at Junior Rowing News (JRN)
+I am a rower and/or coxswain at Lincoln College Boat Club, and Putney Town Rowing Club. I have previously been a member of the Rowing Club at Harvard Griffin Graduate School of Arts and Sciences, and TBC Racing. Alongisde competing, I provide live commentary at amateur rowing races. I am also a [UK Racing Content](https://jrn.news/author/studentrowingwriter2526110/) writer at Junior Rowing News (JRN)
 
 ### Park Run
 Park Run is a free, timed 5km fun-run taking place every Saturday at 9am at local parks across the world. Find your nearest Park Run [here](https://www.parkrun.com/countries/) and view my Park Run stats [here](https://www.parkrun.org.uk/parkrunner/1277829/).
