@@ -42,20 +42,21 @@ author_profile: true
 
 <div class="row">
   <div class="columnL">
-      <h2> <a href="https://arxiv.org/abs/2504.15442">Topological model selection: a case-study in tumour-induced angiogenesis</a> </h2>
-      Published in: <em>arxiv pre-print</em>, 2025
+      <h2> <a href="https://academic.oup.com/bioinformatics/article/42/3/btag065/8516556">Topological model selection: a case-study in tumour-induced angiogenesis</a> </h2>
+      Published in: <em>Bioinformatics</em>, 2026
       <br /> <br />
       This paper studies the problem of parameter inference and model selection and develops a novel pipeline applied to tumour-induced angiogenesis, the process through which cancerous tumours gain a blood supply and grow.
       <br /> <br />
-      Citation: Robert A McDonald, Helen M Byrne, Heather A Harrington, Thomas Thorne, & Bernadette J Stolz. (2025). Topological model selection: a case-study in tumour-induced angiogenesis.
+      Citation: McDonald, R.A., Byrne, H.M., Harrington, H.A., Thorne, T. and Stolz, B.J., 2026. Topological model selection: a case-study in tumour-induced angiogenesis. Bioinformatics, 42(3), p.btag065.
       <br /> <br />      
       <a href="https://arxiv.org/abs/2504.15442"> [arxiv] </a>
+      <a href="/files/mcdonald2026tms.bib"> [bibtex] </a>
       <a href="https://github.com/rmcdomaths/tms"> [code] </a>   
   </div>
-  <!-- <div class="columnR">
+  <div class="columnR">
         <br /> <br />     
-      <img style="height:350px" src="/images/interface.png">
-  </div> -->
+      <img style="height:350px" src="/images/bioinformatics_cover.jpeg">
+  </div>
 </div>
 
 <div class="row">
@@ -68,6 +69,7 @@ author_profile: true
       Citation: McDonald, R.A., Neuhausler, R., Robinson, M., Larsen, L.G., Harrington, H.A. and Bruna, M., 2023. Zigzag persistence for coral reef resilience using a stochastic spatial model. Journal of the Royal Society Interface, 20(205), p.20230280.
       <br /> <br />      
       <a href="https://arxiv.org/abs/2209.08974"> [arxiv] </a>
+      <a href="/files/mcdonald2023coral.bib"> [bibtex] </a>
       <a href="https://github.com/rmcdomaths/zigzagcoralmodel"> [code] </a>   
   </div>
   <div class="columnR">
