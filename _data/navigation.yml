@@ -7,8 +7,11 @@ main:
     url: /research/  
 
   - title: "Teaching"
-    url: /teaching/    
-    
+    url: /teaching/
+
+  - title: "Modern Pentathlon"
+    url: /pentathlon/
+
   - title: "Miscellaneous"
     url: /misc/
 

@@ -1,0 +1,137 @@
+/* ==========================================================================
+   MODERN PENTATHLON SCORE CALCULATOR - styles
+   Used by _pages/pentathlon.md together with assets/js/pentathlon.js.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   COLOURS - change these to restyle the calculator
+   -------------------------------------------------------------------------- */
+#pentathlon-calculator {
+  --pent-par: #d6f0d6;            /* par rows and par box (green) */
+  --pent-par-strong: #2e7d32;     /* par box accent */
+  --pent-half-blue: #8ec9ee;      /* half blue box accent */
+  --pent-full-blue: #0b3d91;      /* full blue box accent */
+  --pent-current: #e0701b;        /* current score buttons and highlight */
+  --pent-current-tint: #fde9d9;
+  --pent-target: #6a3fb5;         /* target score buttons and highlight */
+  --pent-target-tint: #ebe3f7;
+  --pent-border: #dcdcdc;
+  --pent-muted: #6b6b6b;
+}
+
+/* --------------------------------------------------------------------------
+   General
+   -------------------------------------------------------------------------- */
+/* 1px of room so table edges aren't clipped in saved images */
+#pentathlon-calculator { padding: 1px; }
+
+#pentathlon-calculator table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  font-size: 0.8em;
+}
+#pentathlon-calculator th,
+#pentathlon-calculator td { padding: 0.2em 0.4em; }
+#pentathlon-calculator th { line-height: 1.2; }
+#pentathlon-calculator .pent-num { text-align: right; }
+#pentathlon-calculator .pent-pick { text-align: center; }
+
+/* --------------------------------------------------------------------------
+   Save-as-image button
+   -------------------------------------------------------------------------- */
+.pent-header { display: flex; gap: 0.8em; align-items: center; margin-bottom: 0.8em; }
+#pentathlon-calculator .pent-title {
+  flex: 1; min-width: 0; margin: 0; padding: 0.2em 0.4em;
+  font-size: 1.4em; font-weight: bold;
+  border: 1px solid var(--pent-border); border-radius: 4px;
+}
+#pentathlon-calculator .pent-title::placeholder { color: #c4c4c4; font-weight: normal; }
+.pent-save {
+  font-size: 0.8em; cursor: pointer; padding: 0.3em 0.8em;
+  border: 1px solid var(--pent-border); border-radius: 4px; background: #f7f7f7;
+}
+.pent-save:hover { background: #ececec; }
+
+/* --------------------------------------------------------------------------
+   Top row: entered scores table (left), current/target boxes stacked
+   (middle), standards boxes stacked (right)
+   -------------------------------------------------------------------------- */
+.pent-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+.pent-breakdown { flex: 2 1 18em; }
+.pent-total-row td { font-weight: bold; }
+
+.pent-boxes {
+  flex: 1 1 8em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.pent-box {
+  border: 1px solid var(--pent-border);
+  border-top: 4px solid var(--pent-muted);
+  border-radius: 4px;
+  padding: 0.3em 0.5em;
+}
+.pent-box-label { font-size: 0.7em; color: var(--pent-muted); }
+.pent-box-value { font-size: 1.3em; font-weight: bold; }
+.pent-box-current { border-top-color: var(--pent-current); }
+.pent-box-target  { border-top-color: var(--pent-target); }
+.pent-box-half    { border-top-color: var(--pent-half-blue); }
+.pent-box-par     { border-top-color: var(--pent-par-strong); background: var(--pent-par); }
+.pent-box-full    { border-top-color: var(--pent-full-blue); }
+
+/* --------------------------------------------------------------------------
+   Discipline tables: four side by side (two on tablets, one on phones)
+   -------------------------------------------------------------------------- */
+.pent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6em;
+  align-items: start;
+}
+@media (max-width: 60em) { .pent-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 30em) { .pent-grid { grid-template-columns: 1fr; } }
+
+.pent-card h3 { margin: 0 0 0.3em; font-size: 1em; }
+
+/* Par row (green) */
+.pent-par-row td { background: var(--pent-par); font-weight: bold; }
+
+/* Selected rows */
+.pent-selected-current td { background: var(--pent-current-tint); }
+.pent-selected-target td  { background: var(--pent-target-tint); }
+.pent-selected-current.pent-selected-target td {
+  background: linear-gradient(90deg, var(--pent-current-tint), var(--pent-target-tint));
+}
+
+/* Own-entry row at the bottom of each table */
+#pentathlon-calculator .pent-own {
+  width: 100%; min-width: 3.4em; margin: 0; padding: 0.1em 0.15em;
+  font-size: 1em; border: 1px solid var(--pent-border); border-radius: 3px;
+}
+.pent-own-row td { border-top: 2px solid var(--pent-border); }
+.pent-help { font-size: 0.7em; color: #b00020; margin: 0.3em 0 0; }
+
+/* Explainer under each table */
+.pent-explainer { font-size: 0.7em; color: var(--pent-muted); line-height: 1.4; margin-top: 0.5em; }
+.pent-explainer p { margin: 0 0 0.5em; }
+.pent-explainer .pent-explainer-title { font-weight: bold; color: #333; margin: 0.8em 0 0.2em; }
+.pent-explainer .pent-explainer-title:first-child { margin-top: 0; }
+
+/* Click buttons */
+.pent-dot {
+  width: 1em; height: 1em; padding: 0; cursor: pointer;
+  border-radius: 50%; border: 2px solid var(--pent-border); background: #fff;
+  vertical-align: middle;
+}
+.pent-dot-current:hover, .pent-dot-current[aria-pressed="true"] { border-color: var(--pent-current); }
+.pent-dot-target:hover,  .pent-dot-target[aria-pressed="true"]  { border-color: var(--pent-target); }
+.pent-dot-current[aria-pressed="true"] { background: var(--pent-current); }
+.pent-dot-target[aria-pressed="true"]  { background: var(--pent-target); }
